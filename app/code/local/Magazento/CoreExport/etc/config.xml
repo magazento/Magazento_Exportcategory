@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!-- 
+/*
+* @category   Magazento
+* @package    Magazento_CoreExport
+* @author     Kate Mironova
+* @author     Ivan Proskuryakov
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+    <modules>
+        <Magazento_CoreExport>
+            <version>0.1.3</version>
+        </Magazento_CoreExport>
+    </modules>
+    <frontend>
+        <routers>
+            <coreexport>
+                <use>standard</use>
+                <args>
+                    <module>Magazento_CoreExport</module>
+                    <frontName>coreexport</frontName>
+                </args>
+            </coreexport>
+        </routers>
+        <layout>
+            <updates>
+                <coreexport>
+                    <file>magazento_coreexport.xml</file>
+                </coreexport>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <coreexport>
+                <use>admin</use>
+                <args>
+                    <module>Magazento_CoreExport</module>
+                    <frontName>coreexport</frontName>
+                </args>
+            </coreexport>
+                <adminhtml>
+                    <args>
+                        <modules>
+                            <Magazento_CoreExport before="Mage_Adminhtml">Magazento_CoreExport</Magazento_CoreExport>
+                        </modules>
+                    </args>
+                </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <acl>
+            <resources>
+        <admin>
+            <children>
+                <system>
+                    <children>
+                        <config>
+                            <children>
+                                <coreexport translate="title" module="coreexport">
+                                    <title>coreexport</title>
+                                </coreexport>
+                            </children>
+                        </config>
+                    </children>
+                </system>
+
+            </children>
+        </admin>
+            </resources>
+        </acl>
+       
+          <layout>
+            <updates>
+                <coreexport>
+                    <file>magazento_coreexport.xml</file>
+                </coreexport>
+            </updates>
+        </layout>
+        
+    </adminhtml>   
+    <global>
+        <models>
+            <coreexport>
+                <class>Magazento_CoreExport_Model</class>
+                <resourceModel>coreexport_mysql4</resourceModel>
+            </coreexport>
+            <coreexport_mysql4>
+                <class>Magazento_CoreExport_Model_Mysql4</class>
+                <entities>
+                    <coreexport>
+                        <table>coreexport</table>
+                    </coreexport>
+                </entities>
+            </coreexport_mysql4>
+        </models>
+        <resources>
+            <coreexport_setup>
+                <setup>
+                    <module>Magazento_CoreExport</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </coreexport_setup>
+            <coreexport_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </coreexport_write>
+            <coreexport_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </coreexport_read>
+        </resources>
+        <blocks>
+            <coreexport>
+                <class>Magazento_CoreExport_Block</class>
+            </coreexport>
+        </blocks>
+        <helpers>
+            <coreexport>
+                <class>Magazento_CoreExport_Helper</class>
+            </coreexport>
+        </helpers>
+    </global>
+</config>

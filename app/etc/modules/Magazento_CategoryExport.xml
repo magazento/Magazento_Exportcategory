@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magazento_CategoryExport>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magazento_CategoryExport>
+    </modules>
+</config> 

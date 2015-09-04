@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* @category   Magazento
+* @package    Magazento_CategoryExport
+* @author     Kate Mironova
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+    <modules>
+        <Magazento_CategoryExport>
+            <version>0.1.4</version>
+        </Magazento_CategoryExport>
+    </modules>
+    <frontend>
+        <routers>
+            <categoryexport>
+                <use>standard</use>
+                <args>
+                    <module>Magazento_CategoryExport</module>
+                    <frontName>categoryexport</frontName>
+                </args>
+            </categoryexport>
+        </routers>
+        <layout>
+            <updates>
+                <categoryexport>
+                    <file>magazento_categoryexport.xml</file>
+                </categoryexport>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <fieldsets>
+            <category_dataflow>
+                <attribute_set_id>
+                    <system>1</system>
+                </attribute_set_id>
+                <entity_id>
+                    <system>1</system>
+                </entity_id>
+                <entity_type_id>
+                    <system>1</system>
+                </entity_type_id>
+                <parent_id>
+                    <system>1</system>
+                </parent_id>
+                <path>
+                    <system>1</system>
+                </path>
+                <children>
+                    <system>1</system>
+                </children>
+                <all_children>
+                    <system>1</system>
+                </all_children>
+                </category_dataflow>
+        </fieldsets>
+    </admin>
+    <adminhtml>
+        <acl>
+            <resources>
+        <admin>
+            <children>
+                <system>
+                    <children>
+                        <config>
+                            <children>
+                                <categoryexport translate="title" module="categoryexport">
+                                    <title>categoryexport</title>
+                                </categoryexport>
+                            </children>
+                        </config>
+                    </children>
+                </system>
+
+            </children>
+        </admin>
+            </resources>
+        </acl>
+       
+          <layout>
+            <updates>
+                <categoryexport>
+                    <file>magazento_categoryexport.xml</file>
+                </categoryexport>
+            </updates>
+        </layout>
+        
+    </adminhtml>   
+    <global>
+        <models>
+            <categoryexport>
+                <class>Magazento_CategoryExport_Model</class>
+            </categoryexport>
+        </models>
+        <resources>
+            <categoryexport_setup>
+                <setup>
+                    <module>Magazento_CategoryExport</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </categoryexport_setup>
+            <categoryexport_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </categoryexport_write>
+            <categoryexport_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </categoryexport_read>
+        </resources>
+
+        <helpers>
+            <categoryexport>
+                <class>Magazento_CategoryExport_Helper</class>
+            </categoryexport>
+        </helpers>
+    </global>
+    <default>
+        <categoryexport>
+            <options>
+                <enable>1</enable>
+             </options>
+        </categoryexport>
+    </default>
+</config>
