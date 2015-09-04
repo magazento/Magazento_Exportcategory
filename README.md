@@ -1,0 +1,19 @@
+<p>If you're looking for a way to import/export the categories and subcategories in a Magento store, then the Magento Bulk Categories (CSV/XML) extension is exactly what you need. This module enables you to greatly simplify the categories and subcategories transfer process, making it almost entirely automatic, but at the same time it also allows any user to import and export related category data, such as meta title, meta description, meta keywords. It can also manage the category image and category description in a breeze. Additionally, here's what else you can do through this extension:</p>
+<p><strong><span style="color: #ff6600; font-size: medium;">- Import/Export the categories, subcategories and any of their related data</span></strong></p>
+<p style="float:right; margin-left: 10px;">
+<iframe width="420" height="315" src="//www.youtube.com/embed/mtChGL8TYFg" frameborder="0" allowfullscreen></iframe>
+</p>
+<p>The Magento Bulk Categories extension allows you to import and export any category or subcategory from or to a Magento store. It greatly simplifies the implied process, reducing it to only a few intuitive tasks. The categories and subcategories can be exported to a CSV or HTML file, but they can also be imported from any of these documents. With the help of this extension users can also manage the related category data, including meta descriptions, meta keywords and meta title. All these can be exported or imported within a few clicks.</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff6600;">- Import/Export thumbnail images and category images</span></strong></span></p>
+<p>This extension also allows any Magento store admin to manage and transfer the product category images, as well as the thumbnail images in a few clicks. They can be imported from a CSV or HTML document, but they can also be exported to these same type of formats. The process is greatly simplified and involves significantly less time than with the manual procedure of transfer.</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff6600;">- Import/Export the store's category products</span></strong></span></p>
+<p>With the help of this extension admins are now able to organize the Magento store's category products with increased ease. The entire process is automatized, the waiting time is reduced when compared to the manual transfer procedure, and customers can benefit from precisely placed category product descriptions within minutes.</p>
+<p><span style="font-size: medium; color: #ff6600;"><strong>- Import/Export the store's categories and set the categoryIDs</strong></span></p>
+<p>This Magento extension enables anyone to import and export the store's categories within a few simple steps. This option is especially useful for those who own multiple store categories, as the process is simplified considerably thanks to the extension's intuitive functionality. Admins can also set the categoryIDs within seconds, according to their preference. This process is entirely automatized, and the extension will provide you all the blank fields that need to be filled. All in all, the operation becomes much easier and faster, leaving owners with more time to manage other important tasks relating to their Magento store.</p>
+
+<p><img src="http://magazento.com/promo/categoryexport/Screenshot-1.png" alt="" width="900" /></p>
+<p><img src="http://magazento.com/promo/categoryexport/Screenshot-2.png" alt="" width="900" /></p>
+<p><img src="http://magazento.com/promo/categoryexport/Screenshot-3.png" alt="" width="900" /></p>
+<p><img src="http://magazento.com/promo/categoryexport/Screenshot-4.png" alt="" width="900" /></p>
+<p><img src="http://magazento.com/promo/categoryexport/Screenshot-5.png" alt="" width="900" /></p>
+<p><img src="http://magazento.com/promo/categoryexport/Screenshot-6.png" alt="" width="900" /></p>
